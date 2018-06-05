@@ -1,17 +1,24 @@
-# Watcher of Friends Online
+# Watch friends who are online
+The program ```vk_friends_online.py``` shows vk online friends.
 
-[TODO. There will be project description]
+# How to use 
+```
+    1) virtualenv -p python3 env
+    2) pip install -r requirements.txt
+    or pip install ﻿vk==2.0.2
+    3) python vk_friends_online.py
+ ```
 
-# How to Install
+You can print data like this:
+```
+Enter your login:    
+Enter you password:   
+The friends are online:  
+Наталья Гришина
 
-Python 3 should be already installed. Then use pip (or pip3 if there is a conflict with old Python 2 setup) to install dependencies:
-
-```bash
-pip install -r requirements.txt # alternatively try pip3
 ```
 
-Remember, it is recommended to use [virtualenv/venv](https://devman.org/encyclopedia/pip/pip_virtualenv/) for better isolation.
+# Project Goals 
 
-# Project Goals
-
-The code is written for educational purposes. Training course for web-developers - [DEVMAN.org](https://devman.org)
+The code is written for educational purposes. Training course for web-developers - 
+[DEVMAN.org](https://devman.org)
