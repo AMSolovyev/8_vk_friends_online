@@ -28,7 +28,7 @@ def get_online_friends(vk_api):
 
 
 def output_users(friends_online):
-    if  not friends_online:
+    if not friends_online:
         print('There is not any friends to be online')
     else:
         print('The friends are online:  ')
