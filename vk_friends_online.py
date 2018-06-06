@@ -26,7 +26,7 @@ def get_online_friends(vk_api):
 
 
 def output_users(friends_are_online):
-    if len(friends_are_online) == 0:
+    if friends_are_online == 0:
         print('There is not any friends to be online')
     else:
         print('The friends are online:  ')
@@ -39,3 +39,4 @@ if __name__ == '__main__':
     vk_api = connect_vk(login, password)
     friends_are_online = get_online_friends(vk_api)
     output_users(friends_are_online)
+
