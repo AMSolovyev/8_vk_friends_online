@@ -13,10 +13,12 @@ def enter_password():
 
 
 def connect_vk(login, password, vk_api_version=5.78):
-    session = vk.AuthSession(app_id=APP_ID,
-                             user_login=login,
-                             user_password=password,
-                             scope='friends')
+    session = vk.AuthSession(
+        app_id=APP_ID,
+        user_login=login,
+        user_password=password,
+        scope='friends'
+    )
     return vk.API(session, v=vk_api_version, timeout=20)
 
 
@@ -26,7 +28,7 @@ def get_online_friends(vk_api):
 
 
 def output_users(friends_are_online):
-    if friends_are_online == 0:
+    if  friends_are_online == 0:
         print('There is not any friends to be online')
     else:
         print('The friends are online:  ')
@@ -39,4 +41,3 @@ if __name__ == '__main__':
     vk_api = connect_vk(login, password)
     friends_are_online = get_online_friends(vk_api)
     output_users(friends_are_online)
-
