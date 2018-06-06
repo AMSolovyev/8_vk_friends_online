@@ -27,12 +27,12 @@ def get_online_friends(vk_api):
     return vk_api.users.get(user_ids=online_friends_ids)
 
 
-def output_users(friends_are_online):
-    if  friends_are_online == 0:
+def output_users(friends_online):
+    if  not friends_online:
         print('There is not any friends to be online')
     else:
         print('The friends are online:  ')
-        for friend in friends_are_online:
+        for friend in friends_online:
             print('{} {}'.format(friend['first_name'], friend['last_name']))
 
 if __name__ == '__main__':
