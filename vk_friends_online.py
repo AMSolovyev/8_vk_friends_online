@@ -12,7 +12,7 @@ def enter_password():
     return getpass('Enter you password:   ')
 
 
-def connect_vk(login, password,vk_api_version=5.78):
+def connect_vk(login, password, vk_api_version=5.78):
     session = vk.AuthSession(app_id=APP_ID,
                              user_login=login,
                              user_password=password,
